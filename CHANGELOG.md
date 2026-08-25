@@ -7,6 +7,16 @@ e as versões seguem o [Versionamento Semântico](https://semver.org/lang/pt-BR/
 
 ## [Não lançado]
 
+## [1.2.0] - 2026-08-25
+
+### Adicionado
+
+- `.vscode/extensions.json`: 8 extensões do VS Code recomendadas para
+  iniciantes (tradução pt-BR, Prettier, Live Server, Auto Rename Tag,
+  Path Intellisense, Error Lens, Color Highlight e Git Autoconfig).
+- README atualizado com nova seção "Extensões do VS Code (opcional)"
+  e contagem de arquivos ajustada.
+
 ## [1.1.0] - 2026-08-24
 
 ### Adicionado
