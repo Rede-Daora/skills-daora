@@ -8,7 +8,7 @@ Se você é um agente (OpenCode, Claude Code ou similar) instalando este kit no 
 
 ## Para quem é este kit
 
-Para qualquer pessoa que quer criar um site ou aplicativo, mas nunca mexeu com programação. Você não precisa saber nada de código. Você descreve o que quer — e o OpenCode constrói, explica cada passo e pede a sua aprovação antes de fazer qualquer coisa importante.
+Para qualquer pessoa que quer criar um site ou aplicativo.Você descreve o que quer — e o OpenCode constrói, explica cada passo e pede a sua aprovação antes de fazer qualquer coisa importante.
 
 ## O que vem no kit
 
