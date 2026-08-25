@@ -32,6 +32,16 @@ Três tipos de arquivo, que você vai copiar para dentro da pasta do **seu** pro
 | `superpm` | O gerente do projeto: mantém o painel do que já ficou pronto e do que falta, e avisa antes de problemas. |
 | `anti-slop-ptbr` | Caça textos com "cara de robô" (frases batidas, enrolação) e limpa para ficar com a sua voz. |
 
+## Jeito mais fácil: use este modelo
+
+Na página deste repositório no GitHub existe o botão verde **"Use this template"** (Usar este modelo). Apertando ele, o GitHub cria uma cópia completa do kit na SUA conta, num repositório novo só seu. Depois:
+
+1. Traga essa cópia para o computador: botão **Code** → **Download ZIP** (e descompacte), ou `git clone` do SEU repositório novo;
+2. Abra o OpenCode dentro dessa pasta;
+3. Pronto: tudo já vem instalado — pode conversar e criar!
+
+Se preferir o caminho manual (colocar os arquivos dentro de um projeto que você já tem), siga os passos abaixo.
+
 ## Instalação em 4 passos
 
 1. **Baixe o kit.** Na página deste repositório no GitHub, aperte o botão verde **Code** e escolha **Download ZIP**. Depois descompacte o arquivo baixado.

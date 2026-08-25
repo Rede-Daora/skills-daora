@@ -1,0 +1,20 @@
+name: Sugerir uma habilidade nova
+description: Conte uma coisa nova que o kit poderia fazer por quem está começando.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: "Que ótima ideia compartilhar! Duas perguntinhas simples:"
+  - type: textarea
+    id: ideia
+    attributes:
+      label: Qual é a sua ideia?
+      description: "Em uma ou duas frases: o que essa habilidade faria?"
+    validations:
+      required: true
+  - type: textarea
+    id: ajuda
+    attributes:
+      label: Como isso ajudaria quem está começando?
+    validations:
+      required: true
