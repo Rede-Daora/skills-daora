@@ -12,13 +12,14 @@ Para qualquer pessoa que quer criar um site ou aplicativo.Você descreve o que q
 
 ## O que vem no kit
 
-Três tipos de arquivo, que você vai copiar para dentro da pasta do **seu** projeto:
+Quatro tipos de arquivo, que você vai copiar para dentro da pasta do **seu** projeto:
 
 | Arquivo | O que faz |
 |---|---|
 | `AGENTS.md` | Regras de bom comportamento: português do Brasil sempre, linguagem simples, uma coisa por vez. |
 | `opencode.json` | Configuração de segurança: nada roda sem você permitir; comandos perigosos ficam bloqueados para sempre. |
 | `.opencode/skills/` | As 7 habilidades que o OpenCode aprende (veja a tabela abaixo). |
+| `.vscode/extensions.json` | 8 extensões do VS Code recomendadas: tradução, formatação, servidor local e mais (veja abaixo). |
 
 ### As 7 habilidades
 
@@ -31,6 +32,21 @@ Três tipos de arquivo, que você vai copiar para dentro da pasta do **seu** pro
 | `explica-tudo` | Apareceu um erro estranho ou arquivo desconhecido? Traduz tudo para português de gente. |
 | `superpm` | O gerente do projeto: mantém o painel do que já ficou pronto e do que falta, e avisa antes de problemas. |
 | `anti-slop-ptbr` | Caça textos com "cara de robô" (frases batidas, enrolação) e limpa para ficar com a sua voz. |
+
+### Extensões do VS Code (opcional)
+
+Quando você abrir o projeto no VS Code, ele pergunta se quer instalar extensões recomendadas. São 8 extensões que facilitam a vida:
+
+| Extensão | O que faz |
+|---|---|
+| **Portuguese Language Pack** | Traduz o VS Code inteiro para português |
+| **Prettier** | Formata o código automaticamente (deixa tudo alinhado) |
+| **Live Server** | Cria um servidor local para ver seu site atualizando em tempo real |
+| **Auto Rename Tag** | Renomeia tags HTML junto (muda `<div>` e o `</div>` muda junto) |
+| **Path Intellisense** | Autocompleta caminhos de arquivo (ajuda a não errar nome de pasta) |
+| **Error Lens** | Mostra erros direto no código (não precisa ficar procurando) |
+| **Color Highlight** | Mostra cores no código (vê que cor é `#ff5733` sem abrir nada) |
+| **Git Autoconfig** | Configura nome e email do Git automaticamente em cada projeto |
 
 ## Jeito mais fácil: use este modelo
 
@@ -47,7 +63,7 @@ Se preferir o caminho manual (colocar os arquivos dentro de um projeto que você
 1. **Baixe o kit.** Na página deste repositório no GitHub, aperte o botão verde **Code** e escolha **Download ZIP**. Depois descompacte o arquivo baixado.
    *(Se preferir usar o terminal: `git clone https://github.com/SEU-USUARIO/skills-daora.git`)*
 
-2. **Copie 3 coisas para a pasta do SEU projeto:** o arquivo `AGENTS.md`, o arquivo `opencode.json` e a pasta inteira `.opencode/`. Cole na raiz do seu projeto (a mesma pasta onde você abre o OpenCode).
+2. **Copie 4 coisas para a pasta do SEU projeto:** o arquivo `AGENTS.md`, o arquivo `opencode.json`, a pasta inteira `.opencode/` e a pasta `.vscode/`. Cole na raiz do seu projeto (a mesma pasta onde você abre o OpenCode).
 
 3. **Abra o OpenCode** dentro da pasta do seu projeto.
 
