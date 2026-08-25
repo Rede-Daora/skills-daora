@@ -1,4 +1,4 @@
-# Kit de Iniciação OpenCode — Skill Daora
+# Kit para Iniciantes no OpenCode — Skill Daora
 
 Arquivos prontos que ensinam o OpenCode a conversar com você como um professor paciente: tudo em português simples, uma coisa por vez, sem palavras difíceis.
 
