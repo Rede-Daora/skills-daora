@@ -2,6 +2,10 @@
 
 Arquivos prontos que ensinam o OpenCode a conversar com você como um professor paciente: tudo em português simples, uma coisa por vez, sem palavras difíceis.
 
+## Para agentes de IA
+
+Se você é um agente (OpenCode, Claude Code ou similar) instalando este kit no projeto de alguém: **siga o protocolo em [INSTALAR.md](INSTALAR.md)**. Fale com a pessoa em português do Brasil simples, uma coisa por vez, e nunca sobrescreva os arquivos dela sem perguntar.
+
 ## Para quem é este kit
 
 Para qualquer pessoa que quer criar um site ou aplicativo, mas nunca mexeu com programação. Você não precisa saber nada de código. Você descreve o que quer — e o OpenCode constrói, explica cada passo e pede a sua aprovação antes de fazer qualquer coisa importante.
