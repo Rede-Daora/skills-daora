@@ -1,0 +1,62 @@
+name: Validar kit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o código
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Conferir arquivos do kit
+        run: |
+          python3 - <<'EOF'
+          import json, pathlib, sys
+
+          erros = []
+
+          cfg = json.loads(pathlib.Path("opencode.json").read_text(encoding="utf-8"))
+          if "$schema" not in cfg:
+              erros.append("opencode.json sem $schema")
+
+          pasta = pathlib.Path(".opencode/skills")
+          pastas = sorted(d for d in pasta.iterdir() if d.is_dir())
+          if not pastas:
+              erros.append("nenhuma habilidade encontrada em .opencode/skills/")
+
+          for d in pastas:
+              f = d / "SKILL.md"
+              if not f.exists():
+                  erros.append(f"{d.name}: SKILL.md ausente")
+                  continue
+              texto = f.read_text(encoding="utf-8")
+              cabecalho = texto.split("---")[1] if texto.startswith("---") else ""
+              if "\nname:" not in cabecalho or "\ndescription:" not in cabecalho:
+                  erros.append(f"{d.name}: frente YAML sem name ou description")
+              if d.name == "anti-slop-ptbr":
+                  if not (d / "scripts").is_dir() or not (d / "references").is_dir():
+                      erros.append(f"{d.name}: scripts ou references ausentes")
+
+          comandos = pathlib.Path(".opencode/command")
+          if comandos.is_dir():
+              for f in sorted(comandos.glob("*.md")):
+                  if not f.read_text(encoding="utf-8").startswith("---"):
+                      erros.append(f"comando {f.name}: frente YAML ausente")
+
+          if erros:
+              print("PROBLEMAS ENCONTRADOS:")
+              for e in erros:
+                  print("-", e)
+              sys.exit(1)
+
+          print(f"Tudo certo! {len(pastas)} habilidades validadas.")
+          EOF

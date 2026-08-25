@@ -1,0 +1,27 @@
+name: Reportar um problema
+description: Algo no kit não funcionou como você esperava.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por avisar! Responda com calma e com suas próprias palavras.
+        Não precisa saber termos técnicos.
+  - type: textarea
+    id: o-que-aconteceu
+    attributes:
+      label: O que aconteceu?
+      description: Conte o que você pediu ao OpenCode e o que saiu errado.
+    validations:
+      required: true
+  - type: textarea
+    id: o-esperado
+    attributes:
+      label: O que você esperava que acontecesse?
+    validations:
+      required: true
+  - type: textarea
+    id: mensagens
+    attributes:
+      label: Apareceu alguma mensagem estranha?
+      description: Se apareceu texto em inglês ou códigos na tela, cole aqui mesmo assim.

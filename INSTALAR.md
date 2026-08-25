@@ -5,6 +5,11 @@
 > Se você é humano, pode ignorar este arquivo — a instalação manual está
 > descrita no README, em 4 passos simples.
 
+> **O projeto foi criado pelo botão "Use this template"?** Então o kit JÁ
+> está instalado nesse repositório: NÃO copie arquivo nenhum. Vá direto ao
+> Passo 4 (Validar) para conferir, dê o relatório final à pessoa e incentive-a
+> a começar pela habilidade `faf-wizard` (ou pelo comando `/comecar`).
+
 ## Sua missão
 
 Copiar os arquivos deste repositório para dentro da pasta de OUTRO projeto,
